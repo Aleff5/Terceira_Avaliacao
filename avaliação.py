@@ -137,8 +137,8 @@ class Conta:
 data_atual = datetime.now()
 
 # teste da classe "cliente"
-cliente = Cliente('aleff', '321321321')
-cliente_2 = Cliente('Luiz', '123123123')
+cliente = Cliente('nome1', 'cpf1')
+cliente_2 = Cliente('nome2', 'cpf2')
 
 cliente.grava()
 cliente.lerDados()
