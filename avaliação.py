@@ -112,7 +112,7 @@ class Conta:
         self.gravaDados()#grava os dados da conta
 
     def sacar(self, valor):
-        if self.saldo_da_conta <= 0:
+        if self.saldo_da_conta <= valor:
             return "Ação indisponível. Saldo insuficiente."
         else:
             self.saldo_da_conta -= valor
@@ -120,7 +120,7 @@ class Conta:
             self.gravaDados()#grava os dados da conta
 
     def movimentacao(self, outraConta, valor):
-        if self.saldo_da_conta <= 0:
+        if self.saldo_da_conta <= valor:
             print("Ação indisponível. Saldo insuficiente.")
         else:
             self.saldo_da_conta -= valor
